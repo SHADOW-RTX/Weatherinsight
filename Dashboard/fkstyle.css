@@ -1,0 +1,179 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #DFF6FF; /* Light Sky Blue */
+    color: #34495E; /* Deep Slate */
+    background:url(cloud-sky.jpg) ;
+    background-size:cover ;
+}
+
+/* Header and Navigation */
+header {
+    
+    background-color: #273C75; /* Deep Twilight Blue */
+    color: #EAECEE; /* Soft White Text */
+    padding: 10px 5px;
+}
+
+.fnb {
+    background-color: #273C75; /* Deep Twilight Blue */
+    padding: 20px 20px 0px 20px;
+}
+
+.snb{
+    display: flex;
+    padding: 5px 5px 5px 1px;
+}
+.logo {
+    font-size: 30px;
+    color: #F8C471; /* Soft Goldenrod */
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #EAECEE; /* Soft White */
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #F8C471; /* Soft Goldenrod */
+    background-color: #0e1d45; /* Fresh Green for Hover */
+    border-radius: 5px;
+}
+
+/* Search Bar */
+.search-container input {
+    padding: 15px;
+    border: 1px solid #B2BEC3; 
+    border-radius: 5px;
+    width: 300px;
+}
+#cityinput{
+    
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    left: 15%;
+}
+
+#searchButton{
+    padding: 15px 20px;
+    background-color: #F8C471; /* Soft Goldenrod */
+    color: #273C75; /* Deep Twilight Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #E67E22; /* Bright Orange */
+}
+#searchButtontwo{
+    padding: 15px 20px;
+    background-color: #F8C471; /* Soft Goldenrod */
+    color: #273C75; /* Deep Twilight Blue */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#searchButtontwo:hover {
+    background-color: #E67E22; /* Bright Orange */
+}
+
+/* Cards */
+
+.weather-dashboard {
+    text-align: center;
+    color: black;
+}
+
+.first-layer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.second-layer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    height: 280px;
+    width: 220px;
+    /* display: inline-block; */
+}
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    letter-spacing: 2px;
+}
+.weather-card, .pollution-card {
+    background-color: #FFFFFF; /* Frost White */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    color: #34495E; /* Deep Slate */
+}
+
+.pollution-card {
+    background-color: #FAD7A0; /* Soft Peach */
+}
+
+.weather-card h2, .pollution-card h2 {
+    color: #273C75; /* Deep Twilight Blue */
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    font-size: 30px;
+    
+
+}
+
+/* Footer */
+footer {
+    background-color: #273C75; /* Deep Twilight Blue */
+    color: #EAECEE; /* Soft White */
+    text-align: center;
+    padding: 10px;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

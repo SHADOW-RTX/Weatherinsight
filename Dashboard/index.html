@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fkstyle.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <div class="fnb">
+                <div class="logo">WeatherInsight</div>
+                <div class="snb">
+
+                    <ul class="nav-links">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">AIR POLLUTION</a></li>
+                        <li><a href="#">ARTICLES</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                    <div class="search-container">
+                        <input type="text" id="cityInput" placeholder="Enter city name ">
+                        <button id="searchButton">Search</button>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="tnb">
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fsection-main">
+            
+                <div class="weather-dashboard">
+                    <div class="first-layer">
+                    <div id="current-weather" class="weather-card">
+                        <h2>Current Weather</h2>
+                        <div id="weather"></div>
+                    </div>
+                </div>
+                <div class="second-layer">
+                     <div id="forecast">
+                    <h2>Upcoming Days</h2>
+                    <div class="forecast-container">
+                        <div id="day1" class="weather-card"></div>
+                        <div id="day2" class="weather-card"></div>
+                        <div id="day3" class="weather-card"></div>
+                        <div id="day4" class="weather-card"></div>
+                        <div id="day5" class="weather-card"></div>
+                    </div>
+                </div>
+
+               
+                </div>
+            </div>
+        </section>
+
+        <section class="ssection-main">
+            <div class="weather-dashboard">
+                <h1>Air Pollution Data</h1>
+                <div class="search-container">
+                    <input type="text" id="cityInput" placeholder="Enter city name">
+                    <button id="searchButtontwo">Search City</button>
+                </div>
+                <div id="air-pollution" class="pollution-card">
+                    <h2>Current Air Pollution</h2>
+                    <div id="pollution-data"></div>
+                </div>
+                <canvas id="aqiChart" width="300" height="150"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><b>This website is based on openweather API which provide free Weather related Data</b></p>
+
+        <p>Our aim is to built a weather forecast platform designed to provide real-time and accurate weather reports, along with related news, precautionary measures, safety tips, articles, and blogs. Our user-friendly interface ensures that users can easily access all weather-related information in one place. In today's technologically advanced world, WeatherInsight stands out by offering alerts and notifications about worldwide weather conditions, helping users stay informed and prepared. Whether you're looking for daily forecasts, air quality updates, or insightful articles, WeatherInsight has everything you need to stay weather-wise and safe.</p>
+
+        <p><b>This Project is ongoing</b> </p>
+        <p></p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
